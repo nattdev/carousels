@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow: hidden;
+}
+
+.container {
+    width: auto;
+    height: 200px;
+    background: black;
+    white-space: nowrap;
+}
+
+.container-img {
+    display: inline-block;
+    height: 100%;
+    width: calc(100vw / 2);
+    background: grey;
+    position: relative;
+}
+
+.container img {
+    background: grey;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.container>div:nth-child(1) {
+    animation: carruselUno 4s linear infinite;
+    background: red;
+}
+
+.container>div:nth-child(2) {
+    animation: carruselTres 8s linear infinite;
+    background: skyblue;
+}
+
+.container>div:nth-child(3) {
+    animation: carruselDos 12s linear infinite;
+    background: yellow;
+}
+
+@keyframes carruselUno {
+    from {
+        transform: translateX(0vw)
+    }
+
+    to {
+        transform: translateX(-50vw)
+    }
+}
+
+@keyframes carruselDos {
+    from {
+        transform: translateX(0vw)
+    }
+
+    to {
+        transform: translateX(-150vw)
+    }
+}
+
+@keyframes carruselTres {
+    from {
+        transform: translateX(0vw)
+    }
+
+    to {
+        transform: translateX(-100vw)
+    }
+}
