@@ -3,21 +3,18 @@
     padding: 0;
 }
 
-body {
-    overflow: hidden;
-}
-
 .container {
-    width: auto;
+    width: 100vw;
     height: 200px;
     background: black;
     white-space: nowrap;
+    overflow: hidden;
 }
 
 .container-img {
     display: inline-block;
     height: 100%;
-    width: calc(100vw / 2);
+    width: 50vw;
     background: grey;
     position: relative;
 }
